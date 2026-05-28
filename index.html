@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conometro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+
+        <section class="cabecario">
+
+            <h1>CRONOMETRO</h1>
+            <h2>Qual tempo deseja cronometrar?</h2>
+
+                <p id="hora">HORAS</p>
+                <input type="number" name="crhor" id="crhor" class="valores" placeholder="00" value="00" min="0" max="23">
+
+                <p id="minutos">MINUTOS</p>
+                <input type="number" name="crmin" id="crmin" class="valores" placeholder="00" value="00" min="0" max="59">
+                
+                <p id="segundos">SEGUNDOS</p>
+                <input type="number" name="crseg" id="crseg" class="valores" placeholder="00" value="00" min="0" max="59"><br>
+
+                <input type="button" value="INICIAR" id="iniciar" onclick="iniciar()">
+            </section>
+
+            <section class="cronometro">
+                <div class="hora">
+                    <div id="hora1">00<span>:</span></div>
+                </div>
+                
+                <div class="minuto">
+                    <div id="minuto1">00<span>:</span></div>
+                </div>
+                
+                <div class="segundo">
+                    <div id="segundo1">00</div>
+                </div>
+                <div id="alerta"></div>
+            </section>
+            
+            <input type="button" value="RETORNAR" id="botao-retorn" onclick="retornar()">
+            <input type="button" value="PAUSAR" id="botao-parar" onclick="parar()">
+            <input type="button" value="FINALIZAR" id="botao-finalizar" onclick="finalizar()">
+
+            <audio src="som/alerta.mp3" id="audio"></audio>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

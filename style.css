@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 200px 1fr;
+}
+
+section.cabecario {
+    margin: 20px;
+    text-align: center;
+
+    grid-area: 1/1/2/4;
+    align-self: center;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,auto);
+    gap: 5px;
+
+    justify-content: center;
+    align-content: center;
+
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color: white;
+
+    align-self: flex-start;
+    grid-area: 1/2/2/3;
+}
+
+h2 {
+    padding: 10px;
+    color: white;
+
+    align-self: center;
+    grid-area: 2/2/3/3;
+}
+
+p{
+    font-size: 1em;
+    color: white;
+    align-self: center;
+}
+
+p#hora {
+    grid-area: 3/1/4/2;
+}
+
+p#minutos {
+    grid-area: 3/2/4/3;
+}
+
+p#segundos {
+    grid-area: 3/3/4/4;
+}
+
+input.valores{
+    width: auto;
+    height: 50px;
+    padding: 2px;
+    color: blue;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 15px;
+
+    align-self: center;
+}
+
+input#iniciar {
+    color: white;
+    background-color: darkgreen;
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    font-size: 1.5em;
+    border-radius: 15px;
+
+    grid-area: 5/2/6/3;
+    justify-self: center;
+}
+
+#iniciar:hover {
+    background-color: white;
+    color: black;
+}
+
+#crhor {
+    grid-area: 4/1/5/2;
+}
+
+#crmin {
+    grid-area: 4/2/5/3;
+}
+
+#crseg {
+    grid-area: 4/3/5/4;
+}
+
+section.cronometro {
+    margin: 5px;  
+    grid-area: 2/1/3/4;
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    
+    /*background-color: blue;*/
+}
+
+div {
+    font-size: 2.6em;
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+}
+
+div.hora {
+    grid-area: 1/1/2/3;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    gap: 3px;
+}
+
+div#hora1 {
+    align-self: center;
+}
+
+div.minuto {
+    grid-area: 1/3/2/5;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    gap: 3px;
+}
+
+div#minuto1 {
+    align-self: center;
+}
+
+div.segundo {
+    grid-area: 1/5/2/7;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    gap: 3px;
+}
+
+div#segundo1 {
+    align-self: center;
+}
+
+div#alerta {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 3.5em;
+    text-align: center;
+
+    grid-area: 1/3/2/5;
+    justify-self: center;
+    align-self: center;
+}
+
+input#botao-retorn {
+    color: white;
+    background-color: #808080;
+    width: 150px;
+    height: 50px;
+    margin-top: 50px;
+    font-size: 1.5em;
+    border-radius: 15px;
+
+    grid-area: 3/2/4/3;
+    align-self: self-start;
+    justify-self: start;
+}
+
+#botao-retorn:hover {
+    background-color: darkgray;
+    color: black;
+}
+
+input#botao-parar {
+    color: white;
+    background-color: gray;
+    width: 150px;
+    height: 50px;
+    margin-top: 50px;
+    font-size: 1.5em;
+    border-radius: 15px;
+    
+    grid-area: 3/2/4/3;
+    align-self: self-start;
+    justify-self: end;
+}
+
+#botao-parar:hover {
+    background-color: darkred;
+}
+
+input#botao-finalizar {
+    color: white;
+    background-color: red;
+    width: 150px;
+    height: 50px;
+    margin-top: 120px;
+    font-size: 1.5em;
+    border-radius: 15px;
+
+    grid-area: 3/2/4/3;
+    align-self: flex-start;
+    justify-self: center;
+}
+
+#botao-finalizar:hover {
+    background-color: darkred;
+    color: black;
+}
