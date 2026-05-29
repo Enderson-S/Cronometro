@@ -15,13 +15,13 @@
             <h2>Qual tempo deseja cronometrar?</h2>
 
                 <p id="hora">HORAS</p>
-                <input type="number" name="crhor" id="crhor" class="valores" placeholder="00" value="00" min="0" max="23">
+                <input type="number" name="crhor" id="crhor" class="valores" placeholder="00" value="00" min="0" max="23" onclick="limparvalores()">
 
                 <p id="minutos">MINUTOS</p>
-                <input type="number" name="crmin" id="crmin" class="valores" placeholder="00" value="00" min="0" max="59">
+                <input type="number" name="crmin" id="crmin" class="valores" placeholder="00" value="00" min="0" max="59" onclick="limparvalores()">
                 
                 <p id="segundos">SEGUNDOS</p>
-                <input type="number" name="crseg" id="crseg" class="valores" placeholder="00" value="00" min="0" max="59"><br>
+                <input type="number" name="crseg" id="crseg" class="valores" placeholder="00" value="00" min="0" max="59" onclick="limparvalores()"><br>
 
                 <input type="button" value="INICIAR" id="iniciar" onclick="iniciar()">
             </section>

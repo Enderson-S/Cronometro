@@ -51,6 +51,12 @@ function contagem() {
   return h,m,s
 }
 
+function limparvalores() {
+  crhor.value = ""
+  crmin.value = ""
+  crseg.value = ""
+}
+
 function iniciar() {
 
   h = Number(hor.value);
@@ -65,14 +71,14 @@ function iniciar() {
     window.alert("Valor invalido");
   } else if (h <= 0 && m <= 0 && s <= 0) {
     window.alert("Valor invalido");
-  }
+  } else {
 
-  crhor.value = "00"
-  crmin.value = "00"
-  crseg.value = "00"
+  crhor.value = ""
+  crmin.value = ""
+  crseg.value = ""
   
   valini = contagem()
-
+  }
 }
 
 function parar() {
