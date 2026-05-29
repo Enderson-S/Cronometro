@@ -2,8 +2,6 @@
 let hor = document.getElementById("crhor");
 let min = document.getElementById("crmin");
 let seg = document.getElementById("crseg");
-const alerta = document.querySelector("div#alerta")
-
 
 const audio = document.getElementById("audio")
  
@@ -37,13 +35,6 @@ function contagem() {
       audio.play()
       clearInterval(meuIntervalo);
       meuIntervalo = null;
-      alerta.insertAdjacentHTML("afterbegin",`<p>O tempo acabou!</p>`)
-      alerta.style.padding = '15px'
-
-      setTimeout(() => {
-      alerta.remove()
-    }, 5000);
-
     }
 
 
@@ -99,7 +90,5 @@ function finalizar() {
 }
 
 function pararalarme() {
-  alerta.style.padding = '0px'
-  alerta.innerHTML = ''
   audio.pause()
-    }
+}
