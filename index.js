@@ -42,7 +42,7 @@ function contagem() {
 
       setTimeout(() => {
       alerta.remove()
-    }, 3000);
+    }, 5000);
 
     }
 
@@ -51,11 +51,6 @@ function contagem() {
   return h,m,s
 }
 
-function limparvalores() {
-  crhor.value = ""
-  crmin.value = ""
-  crseg.value = ""
-}
 
 function iniciar() {
 
@@ -102,3 +97,9 @@ function finalizar() {
     segundo1.innerHTML = ("00")
   }
 }
+
+function pararalarme() {
+  alerta.style.padding = '0px'
+  alerta.innerHTML = ''
+  audio.pause()
+    }

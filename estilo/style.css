@@ -46,7 +46,7 @@ h1 {
     color: white;
 
     align-self: flex-start;
-    grid-area: 1/2/2/3;
+    grid-area: 1/1/2/4;
 }
 
 h2 {
@@ -54,7 +54,7 @@ h2 {
     color: white;
 
     align-self: center;
-    grid-area: 2/2/3/3;
+    grid-area: 2/1/3/4;
 }
 
 p{

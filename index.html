@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conometro</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/midia-query.css">
 </head>
-<body>
+<body onclick="pararalarme()">
     <main class="container">
 
         <section class="cabecario">
@@ -15,13 +16,13 @@
             <h2>Qual tempo deseja cronometrar?</h2>
 
                 <p id="hora">HORAS</p>
-                <input type="number" name="crhor" id="crhor" class="valores" placeholder="00" value="00" min="0" max="23" onclick="limparvalores()">
+                <input type="number" name="crhor" id="crhor" class="valores" placeholder="00" min="0" max="23">
 
                 <p id="minutos">MINUTOS</p>
-                <input type="number" name="crmin" id="crmin" class="valores" placeholder="00" value="00" min="0" max="59" onclick="limparvalores()">
+                <input type="number" name="crmin" id="crmin" class="valores" placeholder="00" min="0" max="59">
                 
                 <p id="segundos">SEGUNDOS</p>
-                <input type="number" name="crseg" id="crseg" class="valores" placeholder="00" value="00" min="0" max="59" onclick="limparvalores()"><br>
+                <input type="number" name="crseg" id="crseg" class="valores" placeholder="00" min="0" max="59"><br>
 
                 <input type="button" value="INICIAR" id="iniciar" onclick="iniciar()">
             </section>
