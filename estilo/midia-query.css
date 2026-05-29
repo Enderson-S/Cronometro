@@ -26,12 +26,12 @@
 
     input#iniciar {
         font-size: 1em;
-        width: 100px;
+        width: 90px;
     }
 
     input#botao-parar {
         font-size: 0.8em;
-        width: 100px;
+        width: 90px;
         grid-area: 3/2/4/3;
         margin: 10px;
         justify-self: self-end;
@@ -39,7 +39,7 @@
 
     input#botao-retorn {
         font-size: 0.8em;
-        width: 100px;
+        width: 90px;
         grid-area:3/2/4/3;
         margin: 10px;
         justify-self: self-start;
@@ -47,7 +47,7 @@
 
     input#botao-finalizar {
         font-size: 0.8em;
-        width: 100px;
+        width: 90px;
         grid-area: 4/2/5/3;
         margin: 10px;
         justify-self: center;
